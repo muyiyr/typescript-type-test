@@ -1,10 +1,16 @@
-Implement a generic `First<T>` that takes an Array `T` and returns it's first element's type.
+For given a tuple, you need create a generic `Length`, pick the length of the tuple
 
 For example
 
 ```ts
-type arr1 = ['a', 'b', 'c']
-type arr2 = [3, 2, 1]
-type head1 = First<arr1> // expected to be 'a'
-type head2 = First<arr2> // expected to be 3
+type tesla = ["tesla", "model 3", "model X", "model Y"];
+type spaceX = [
+  "FALCON 9",
+  "FALCON HEAVY",
+  "DRAGON",
+  "STARSHIP",
+  "HUMAN SPACEFLIGHT"
+];
+type teslaLength = Length<tesla>; // expected 4
+type spaceXLength = Length<spaceX>; // expected 5
 ```
